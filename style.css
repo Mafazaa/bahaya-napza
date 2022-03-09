@@ -1,0 +1,725 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nunito:wght@700&family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap');
+/*---*/
+body {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+  /*padding: 10px;*/
+  border-left: 3px solid rgba(0, 0, 0, .5);
+  border-right: 3px solid rgba(0, 0, 0, .5);
+  flex-direction: column;
+  /*background-color: #E3BEC6;*/
+  background-color: #EFDAD7;
+}
+
+body {
+  background-color: /*#D5D5D5*/ rgba(205, 182, 153, .3);
+}
+/*tampilan utama*/
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  /*background-color: pink;*/
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header-main {
+  /*background-color: salmon;*/
+  margin-top: 80px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-main span{
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 0px 5px 0px #E3BEC6;
+  /*transition: .3s;
+  transition-delay: .1s;*/
+  margin: 10px;
+  color: #B85252;
+}
+
+/*.header-main span:hover{
+  text-shadow: 0 0 0;
+  margin: 6px;
+}*/
+
+
+
+.content-header-main {
+ /* background-color: skyblue;*/
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.content-header-main span{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  opacity: .4;
+  color: #B85252;
+}
+/*---*/
+
+
+/*--container-second*/
+
+
+.container-second {
+  margin-top: 100px;
+  /*background-color: skyblue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+  background-color: #B85252;
+  box-sizing: border-box;
+}
+
+.container-second .header1 {
+ /* background-color: pink;*/
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.header1 h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #EFDAD7;
+  text-align: center;
+}
+.container-tahukah {
+  /*background-color: skyblue;*/
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-second .header2 {
+  background-color: #EFDAD7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  border: 4px solid rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 3px rgba(239, 218, 215, .5);
+}
+
+.header2 p{
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 40px;
+  text-indent: 0px;
+  font-weight: bold;
+  opacity: .8;
+  color: #B85252;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.header2 p span{
+  text-decoration: underline solid rgba(0, 0, 0,.4) 4px;
+}
+
+.tahukah-logo {
+  flex: 1;
+  /*background-color: salmon;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sumber a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .5);
+}
+
+#sumber2 {
+  /*background-color: skyblue;*/
+  width: 100%;
+  margin-top: 35px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sumber2 a {
+  text-align:start ;
+}
+
+/*Container-third*/
+
+.container-third {
+  /*margin-top: 100px;*/
+  /*background-color: skyblue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: skyblue;*/
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.container3-1 {
+  /*background-color: salmon;*/
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container3-2 {
+  /*background-color: yellowgreen;*/
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+
+.card {
+  background-color: #B85252;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, .3);
+  border-radius: 20px;
+  flex: 25%;
+  box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
+}
+
+.header3 {
+  /*background-color: skyblue;*/
+  padding: 5px;
+  margin: 10px;
+}
+
+.header3 span {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgba(239, 218, 215, .5);
+}
+
+.content3 {
+  /*background-color: salmon;*/
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.content3 span {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: rgba(239, 218, 215, .8);
+  line-height: 25px;
+  box-sizing: border-box;
+}
+
+.sumber #sumber2 {
+  margin-top: 10px;
+}
+/*---*/
+
+/*Container-fourth*/
+.container-fourth {
+  margin-top: 90px;
+  background-color: #B85252;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.container-fourth .card {
+  background-color: #EFDAD7;
+  box-shadow: 5px 5px 3px rgba(239, 218, 215, .5);
+  flex: 100%;
+}
+
+.container-fourth .header3 span {
+  color: rgba(184, 82, 82,.6);
+}
+
+
+.container-fourth .content3 span {
+  color:rgba(184, 82, 82, .9);
+}
+
+.container4 {
+  /*background-color: salmon;*/
+  display: flex;
+}
+
+.container4-1 {
+  /*background-color: pink;*/
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.container-fourth .container4 .tahukah-logo {
+  /*background-color: skyblue;*/
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-fourth .container4 .tahukah-logo .logo1 {
+  /*background-color: salmon;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container-fourth .container4 .tahukah-logo .logo1 img{
+  /*background-color: pink;*/
+  max-width: 50%;
+}
+
+.container-fourth .container4 .container4-1 {
+  flex: 2;
+}
+
+.sumber {
+  color: rgba(0, 0, 0, .5);
+}
+
+.container-fourth .container4 .container4-1 .content3 span{
+  line-height: 25px;
+}
+
+.container-fourth .header1 {
+  /*background-color: pink;*/
+  margin: 20px auto 15px auto;
+}
+
+.container-fourth .container4 .tahukah-logo #depresan img{
+  /*background-color: pink;*/
+  width: 35%;
+}
+/*---*/
+
+/*container-fifth*/
+.container-fifth .container-second{
+  background-color: #EFDAD7;
+  margin-top: 0px;
+}
+
+.container-fifth .container-second .header2 {
+  background-color: #B85252;
+  justify-content: space-between;
+}
+
+.container-fifth .container-second .header2 p {
+  color: #EFDAD7;
+}
+
+.container-fifth .container-second .header2 {
+  box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
+  flex: 2;
+}
+.container-fifth iframe {
+  box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
+  border-radius: 10px;
+}
+
+.container-fifth .container-second .tahukah-logo {
+  flex: 1;
+}
+.container-fifth .container-second .header1 h1 {
+  color: #B85252;
+}
+.container-fifth .container-second .header2 p span {
+  text-decoration: none;
+}
+
+/*---*/
+
+/*narkotika*/
+.container-sixth {
+  background-color: #B85252;
+}
+
+.satu .header1 {
+  margin: 30px;
+}
+
+.dua .card {
+  background-color: #EFDAD7;
+  box-shadow: 5px 5px 3px rgba(239, 218, 215, .5);
+}
+
+.container6 {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+.container6-2 {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.dua .header3 span {
+  color: rgba(184, 82, 82,.6);
+}
+
+
+.dua .content3 span {
+  color:rgba(184, 82, 82, .9);
+}
+
+
+/*---*/
+
+.container7 {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+/*---*/
+/*delapan*/
+.container-eight {
+  background-color: #B85252;
+}
+.container-eight .container8 .container3-2{
+  flex: 50%;
+}
+.container8 {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+/*---*/
+
+/*sembilan*/
+.satujuga {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+.satu .satujuga .header1 h1 {
+  color: #B85252;
+}
+/*---*/
+
+
+/*sepuluh*/
+.container-tenth {
+  background-color: #B85252;
+}
+/*---*/
+
+
+
+
+
+.container-tenth .container6 .tahukah-logo {
+  /*background-color: skyblue;*/
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-tenth .container6 .tahukah-logo .logo1 {
+  /*background-color: salmon;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container-tenth .container6 .tahukah-logo .logo1 img{
+  /*background-color: pink;*/
+  max-width: 50%;
+}
+
+/*---*/
+
+
+.container-eleventh .card .poster-main .poster img {
+  width: 100%;
+  max-width: 550px;
+  max-height: 550px;
+  height: 100%;
+  border-radius: 15px;
+  opacity: .8;
+}
+.container-eleventh #font h1 {
+  font-size: 20px;
+}
+
+.container-eleventh #font a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .5);;
+}
+
+.container-twelfth {
+  background-color: rgba(184, 82, 82, .9);
+}
+.container-twelfth .header1 h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #EFDAD7;
+  text-align: center;
+  opacity: .6;
+  margin-top: 15px;
+}
+
+.container-twelfth .container12 .container3-2 {
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.container-twelfth .container12 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} 
+.container-twelfth .akhir{
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color:#EFDAD7;
+  text-align: center;
+  color: rgba(0, 0, 0, .7);
+  font-family: 'poppins', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer span {
+  color: rgba(255, 0, 0, .6);
+}
+
+footer span:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width: 650px) {
+  .container {
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  .header-main span{
+    font-size: 55px;
+    text-align: start;
+  }
+  .header-main {
+    margin-top: 0px;
+  }
+  .content-header-main span{
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .container-tahukah {
+    flex-direction: column-reverse;
+  }
+  .container-second .container-tahukah {
+    justify-content: center;
+    align-items: center;
+  }
+  .container-second .header2 {
+    margin-top: 25px;
+    width: 90%;
+  }
+
+  .container-second {
+    margin-top: 10px;
+  }
+  
+  .header2 p{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 35px;
+    margin-top: 25px;
+  }
+  .sumber a{
+    font-size: 12px;
+  }
+  .card {
+    flex: 100%;
+  }
+
+  .container3-1 {
+    width: 100%;
+    margin: 10px;
+  }
+  .header3 span {
+    font-size: 16px;
+  }
+  
+  .content3 span {
+    font-size: 14px;
+  }
+  .container4{
+    flex-direction:column-reverse;
+  }
+  #sumber2 {
+    font-size: 12px;
+  }
+  .container-fifth .container-second .container-tahukah {
+    width: 100%;
+  }
+  .container-fifth iframe {
+    width: 310px;
+    height: 230px;
+  }
+  .container-eleventh #font h1 {
+    font-size: 16px;
+  }
+  .container-twelfth .container3-2 {
+    max-width: 100%;
+  }
+  .container-twelfth .akhir{
+    display: none;
+  }
+  footer {
+    font-size: 12px;
+  }
+  .container-fifth .container-second .header2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:651px) and (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  .header-main span{
+    font-size: 65px;
+  }
+  .content-header-main span{
+    font-size: 20px;
+  }
+
+  .header-main {
+    margin-top: 50px;
+  }
+  .sumber a{
+    font-size: 13px;
+  }
+
+  .container-tahukah {
+    flex-direction: column-reverse;
+  }
+
+  .container-second .header2 {
+    margin-top: 30px;
+  }
+  .container-fourth .container4 .container4-1 .content3 span{
+    font-size: 14px;
+  }
+  .container-twelfth .akhir{
+    display: none;
+  }
+  .container-eleventh .container3-2 .card {
+    flex: 100%;
+  }
+}
+
+/*BERANTAKAN HAHA*/
