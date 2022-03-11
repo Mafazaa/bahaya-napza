@@ -130,7 +130,7 @@ body {
 /*--container-second*/
 
 
-.container-second {
+.tahukah {
   margin-top: 100px;
   /*background-color: skyblue;*/
   display: flex;
@@ -142,7 +142,7 @@ body {
   box-sizing: border-box;
 }
 
-.container-second .header1 {
+.tahukah .header1 {
  /* background-color: pink;*/
   width: 95%;
   display: flex;
@@ -166,7 +166,7 @@ body {
   flex-direction: row;
 }
 
-.container-second .header2 {
+.tahukah .header2 {
   background-color: #EFDAD7;
   width: 100%;
   display: flex;
@@ -211,6 +211,10 @@ body {
 .sumber a {
   text-decoration: none;
   color: rgba(0, 0, 0, .5);
+}
+
+#freepik a {
+  font-size: 8px;
 }
 
 #sumber2 {
@@ -390,36 +394,37 @@ body {
 /*---*/
 
 /*container-fifth*/
-.container-fifth .container-second{
+#dua {
   background-color: #EFDAD7;
   margin-top: 0px;
 }
 
-.container-fifth .container-second .header2 {
+#dua .header2 {
   background-color: #B85252;
   justify-content: space-between;
 }
 
-.container-fifth .container-second .header2 p {
+#dua  .header2 p {
   color: #EFDAD7;
 }
 
-.container-fifth .container-second .header2 {
+#dua .header2 {
   box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
   flex: 2;
 }
-.container-fifth iframe {
+
+#dua iframe {
   box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
   border-radius: 10px;
 }
 
-.container-fifth .container-second .tahukah-logo {
+#dua  .tahukah-logo {
   flex: 1;
 }
-.container-fifth .container-second .header1 h1 {
+#dua  .header1 h1 {
   color: #B85252;
 }
-.container-fifth .container-second .header2 p span {
+#dua .header2 p span {
   text-decoration: none;
 }
 
@@ -536,6 +541,20 @@ body {
   font-size: 20px;
 }
 
+.container-eleventh #lapor h1 {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: start;
+}
+
+#infografis {
+  background-color: #B85252;
+}
+#infografis .header1 {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .container-eleventh #font a {
   text-decoration: none;
   color: rgba(0, 0, 0, .5);;
@@ -565,7 +584,9 @@ body {
   flex-direction: column;
 } 
 .container-twelfth .akhir{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -589,9 +610,46 @@ footer span:hover {
   color: rgba(255, 0, 0, 1);
 }
 
+.container-pdf embed {
+  width: 100%;
+  height: 600px;
+  border: 3px solid rgba(0, 0, 0, .3);
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px rgba(184, 82, 82, .5);
+}
+.container-pdf {
+  padding: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
 
+#hp {
+  display: none;
+}
+#hp h1 {
+  color: rgba(0, 0, 0, .7);
+}
 
+#maaf {
+  background-color: #EFDAD7;
+}
+#maaf .header1 h1{
+  color: #B85252;
+  margin-top: 20px;
+}
 
+#maaf .header1 .hitam {
+  color: #B85252;
+  text-align: start;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#maaf .header1 h1 span{
+  color: rgba(0, 0, 0, .7);
+}
 
 
 /*Responsive*/
@@ -617,16 +675,16 @@ footer span:hover {
   .container-tahukah {
     flex-direction: column-reverse;
   }
-  .container-second .container-tahukah {
+  .tahukah .container-tahukah {
     justify-content: center;
     align-items: center;
   }
-  .container-second .header2 {
+  .tahukah .header2 {
     margin-top: 25px;
-    width: 90%;
+    width: 100%;
   }
 
-  .container-second {
+  .tahukah {
     margin-top: 10px;
   }
   
@@ -660,10 +718,11 @@ footer span:hover {
   #sumber2 {
     font-size: 12px;
   }
-  .container-fifth .container-second .container-tahukah {
-    width: 100%;
-  }
-  .container-fifth iframe {
+  /*.container-fifth .container-tahukah #dua {
+    width: 200%;
+  }*/
+
+  #dua iframe {
     width: 310px;
     height: 230px;
   }
@@ -679,9 +738,29 @@ footer span:hover {
   footer {
     font-size: 12px;
   }
-  .container-fifth .container-second .header2 {
+  #dua .container-second .header2 {
+    width: 95%;
+  }
+  .container-pdf {
+    padding: 0px;
     width: 100%;
   }
+  #hp {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px
+  }
+  .container-pdf embed {
+    display: none;
+  }
+  .container-eleventh #lapor h1 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  #maaf .header1 .hitam {
+    font-size: 12px;
+  }
+  
 }
 
 @media screen and (min-width:651px) and (max-width: 900px) {
@@ -708,7 +787,7 @@ footer span:hover {
     flex-direction: column-reverse;
   }
 
-  .container-second .header2 {
+  .tahukah .header2 {
     margin-top: 30px;
   }
   .container-fourth .container4 .container4-1 .content3 span{
@@ -719,6 +798,23 @@ footer span:hover {
   }
   .container-eleventh .container3-2 .card {
     flex: 100%;
+  }
+  #hp {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px
+  }
+  .container-pdf embed {
+    display: none;
+  }
+  .container-eleventh #lapor h1 {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  #maaf .header1 .hitam {
+    color: #B85252;
+    text-align: start;
+    font-size: 14px;
   }
 }
 
